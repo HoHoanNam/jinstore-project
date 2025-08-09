@@ -12,6 +12,7 @@ import images from '~/assets/images';
 import Button from '~/components/Button';
 import styles from './Search.module.scss';
 
+const { general } = images;
 const cx = classNames.bind(styles);
 
 function Search() {
@@ -23,7 +24,7 @@ function Search() {
           <div className={cx('logo-section')}>
             <img
               className={cx('logo')}
-              src={images.jinstoreLogo}
+              src={general.jinstoreLogo}
               alt='JinStore Logo'
             />
           </div>

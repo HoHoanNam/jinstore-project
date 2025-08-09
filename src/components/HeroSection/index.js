@@ -7,13 +7,14 @@ import images from '~/assets/images';
 import Button from '~/components/Button';
 import styles from './HeroSection.module.scss';
 
+const { general } = images;
 const cx = classNames.bind(styles);
 
 function HeroSection() {
   return (
     <div
       className={cx('wrapper')}
-      style={{ backgroundImage: `url(${images.heroSection})` }}
+      style={{ backgroundImage: `url(${general.heroSection})` }}
     >
       <div className='container'>
         <div className={cx('inner')}>

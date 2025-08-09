@@ -3,9 +3,9 @@ import Footer from '~/layouts/components/Footer';
 
 function DefaultLayout({ children }) {
   return (
-    <div>
+    <div className='app'>
       <Header />
-      <div className='container'>{children}</div>
+      {children}
       <Footer />
     </div>
   );

@@ -1,4 +1,6 @@
 .btn {
+  display: inline-flex;
+  align-items: center;
   padding: 4px 10px;
   font-size: 1.6rem;
   cursor: pointer;
@@ -14,5 +16,5 @@
 
 .icon + .children,
 .children + .icon {
-  margin-left: 4px;
+  margin-left: 6px;
 }

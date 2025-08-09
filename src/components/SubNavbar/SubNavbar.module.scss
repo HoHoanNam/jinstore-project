@@ -22,7 +22,7 @@
   }
 
   .subnav-tab.sale {
-    color: #dc2626;
+    color: var(--red);
   }
 }
 
@@ -35,6 +35,6 @@
     align-items: center;
     border-radius: 8px;
     color: var(--white);
-    background: linear-gradient(to right, #dc2626, #ea580c);
+    background: linear-gradient(to right, var(--red), #ea580c);
   }
 }

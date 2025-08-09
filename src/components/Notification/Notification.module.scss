@@ -1,0 +1,55 @@
+:root {
+  --notification-height: 40px;
+}
+
+.wrapper {
+  height: var(--notification-height);
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Discount section
+.discount-section {
+  font-weight: 600;
+}
+
+// Timestamp section
+.timestamp-section {
+  display: flex;
+  align-items: center;
+
+  .text {
+    color: #d0c9e2;
+    font-size: 1.5rem;
+  }
+
+  .number {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .text + .number,
+  .number + .text {
+    margin-left: 6px;
+  }
+}
+
+// Close button
+.close-btn {
+  font-size: 2rem;
+  padding: 4px 6px;
+  color: var(--white);
+  background-color: transparent;
+  transition: color 0.3s;
+
+  &:hover {
+    color: hsl(0, 0%, 86%);
+  }
+}

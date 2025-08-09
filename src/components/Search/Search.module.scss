@@ -1,0 +1,99 @@
+:root {
+  --search-height: 48px;
+  --search-top-spacer: 9px;
+  --search-button-width: 52px;
+}
+
+.wrapper {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.inner {
+  height: var(--search-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-section {
+  height: 100%;
+
+  .logo {
+    height: 100%;
+  }
+}
+
+.search {
+  position: relative;
+  width: 800px;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 99px;
+  border: 1.5px solid transparent;
+  background-color: #f3f4f6;
+
+  .search-input {
+    flex: 1;
+    height: 100%;
+    caret-color: var(--primary);
+    background-color: transparent;
+  }
+
+  input:not(:placeholder-shown) ~ .search-btn {
+    color: rgba(22, 24, 35, 0.67);
+  }
+
+  &::after {
+    content: '';
+    width: 1px;
+    height: calc(var(--search-height) - var(--search-top-spacer) * 2);
+    position: absolute;
+    top: var(--search-top-spacer);
+    right: var(--search-button-width);
+    background-color: rgba(22, 24, 35, 0.12);
+  }
+
+  &:focus-within {
+    border-color: rgba(22, 24, 35, 0.2);
+  }
+}
+
+.search-btn {
+  height: 100%;
+  width: var(--search-button-width);
+  font-size: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(22, 24, 35, 0.34);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: hsl(0, 0%, 92%);
+  }
+}
+
+.account-section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  .account-btn {
+    height: 100%;
+    font-size: 2.2rem;
+  }
+}
+
+.account-btn.text {
+  font-size: 1.4rem;
+
+  .signin-text {
+    color: #4f525a;
+  }
+}

@@ -1,0 +1,18 @@
+.btn {
+  padding: 4px 10px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.transparent {
+  background-color: transparent;
+
+  &:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.icon + .children,
+.children + .icon {
+  margin-left: 4px;
+}

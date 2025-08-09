@@ -1,0 +1,40 @@
+.wrapper {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  // border-bottom: 1px solid #e5e7eb;
+}
+
+.inner {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+  height: 100%;
+
+  .subnav-tab {
+    height: 100%;
+    font-size: 1.8rem;
+  }
+
+  .subnav-tab.sale {
+    color: #dc2626;
+  }
+}
+
+.subnav-tab.sale {
+  .sale-text {
+    height: 100%;
+    font-weight: bold;
+    padding: 0 8px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--white);
+    background: linear-gradient(to right, #dc2626, #ea580c);
+  }
+}

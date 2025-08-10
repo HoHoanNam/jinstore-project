@@ -1,0 +1,195 @@
+.middle-section {
+  padding: 40px 0;
+  border-bottom: 1.5px solid #d1d5db;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+// First column
+.desc {
+  color: #6b7280;
+  font-size: 1.4rem;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info,
+.contact {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.info-icon,
+.contact-icon {
+  font-size: 2.6rem;
+}
+
+.info-text,
+.info-phone,
+.contact-text,
+.contact-email {
+  margin-bottom: 0;
+}
+
+.info-text,
+.contact-text {
+  font-size: 1.4rem;
+  color: #11182799;
+}
+
+.info-phone,
+.contact-email {
+  color: #111827;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+// Second, Third & Fourth column
+.list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  .list-item a {
+    color: #4b5563;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: #353c46;
+      text-decoration: underline;
+    }
+  }
+
+  .list-item + .list-item {
+    margin-top: 6px;
+  }
+}
+
+// Fifth column
+// Download apps
+.download-apps {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.download-app {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+
+  .download-btn {
+    width: 164px;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--black);
+
+    .download-icon {
+      margin-right: 4px;
+      font-size: 2.2rem;
+    }
+
+    .msg {
+      font-size: 1.4rem;
+    }
+
+    .download-app-name {
+      font-weight: 600;
+      color: #ea580c;
+    }
+  }
+
+  .download-msg {
+    color: #6b7280;
+  }
+}
+
+// Social apps
+.social-following {
+  font-weight: 600;
+  color: #111827;
+}
+
+.social-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.social-item .social-btn {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+
+  &:hover {
+    &:has(.facebook-icon) {
+      background-color: #1877f2;
+    }
+
+    .facebook-icon {
+      color: var(--white);
+    }
+
+    &:has(.x-icon) {
+      background-color: var(--black);
+    }
+
+    &:has(.instagram-icon) {
+      background-color: #fd1d1d;
+    }
+
+    .instagram-icon {
+      color: var(--white);
+    }
+
+    &:has(.linkedin-icon) {
+      background-color: #0077b5;
+    }
+
+    .linkedin-icon {
+      color: var(--white);
+    }
+  }
+}
+
+// Social icons
+.facebook-icon {
+  color: #1877f2;
+  font-size: 2.8rem;
+}
+
+.x-icon {
+  font-size: 2.2rem;
+  padding: 2px 4px 1px;
+  border-radius: 99px;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.instagram-icon {
+  color: #fd1d1d;
+  font-size: 3.4rem;
+}
+
+.linkedin-icon {
+  color: #0077b5;
+  font-size: 2.8rem;
+}

@@ -17,9 +17,9 @@ function UpperSection() {
           {/* Newsletter */}
           <div className={cx('newsletter')}>
             {/* Newsletter title */}
-            <p className={cx('newsletter-title')}>
+            <h4 className={cx('newsletter-title')}>
               Join our newsletter for £10 offs
-            </p>
+            </h4>
 
             {/* Newsletter desc */}
             <p className={cx('newsletter-desc')}>

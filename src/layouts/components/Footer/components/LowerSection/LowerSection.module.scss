@@ -1,0 +1,58 @@
+.lower-section {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// Left section
+// Copyright
+.copyright {
+  font-weight: 500;
+  color: #6b7280;
+
+  .emphasis {
+    color: var(--primary);
+  }
+}
+
+// Payment
+.payment-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  // Payment button
+  .payment-btn {
+    &:hover {
+      background-color: #e5e3dc;
+    }
+
+    // Payment image
+    .payment-img {
+      height: 20px;
+    }
+  }
+}
+
+// Right section
+// Terms
+.terms {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+
+  // Terms link
+  .terms-link {
+    font-weight: 500;
+    color: #111827;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #1877f2;
+    }
+  }
+}

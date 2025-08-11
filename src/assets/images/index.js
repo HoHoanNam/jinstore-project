@@ -13,6 +13,13 @@ import breakfastDairy from './categories/breakfast-dairy.png';
 import frozenFood from './categories/frozen-food.png';
 import grocStaples from './categories/groc-staples.png';
 
+// Payment
+import visa from './payment/visa.png';
+import paypal from './payment/paypal.png';
+import skrill from './payment/skrill.png';
+import klarna from './payment/klarna.png';
+import mastercard from './payment/mastercard.png';
+
 const images = {
   // General
   general: {
@@ -31,6 +38,15 @@ const images = {
     breakfastDairy,
     frozenFood,
     grocStaples,
+  },
+
+  // Payment
+  payment: {
+    visa,
+    paypal,
+    skrill,
+    klarna,
+    mastercard,
   },
 };
 

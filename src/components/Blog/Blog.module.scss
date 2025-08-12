@@ -1,0 +1,77 @@
+.blog {
+  width: 316px;
+  height: auto;
+  position: relative;
+
+  // Blog label
+  .blog-label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    padding: 6px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 6px;
+    color: var(--primary);
+    background-color: var(--white);
+    text-transform: uppercase;
+  }
+}
+
+// Image section
+.img-section {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border: 1.5px solid #d7dae0;
+}
+
+// Blog image
+.blog-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+// Blog details
+.blog-details {
+  // Blog title
+  .blog-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #030712;
+    margin-bottom: 6px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2; // Giữ nguyên, nhưng đặt sau prefix để ưu tiên chuẩn mới
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+  }
+
+  // Blog desc
+  .blog-desc {
+    color: #4b5563;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2; // Giữ nguyên, nhưng đặt sau prefix để ưu tiên chuẩn mới
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+  }
+
+  // Byline
+  .byline {
+    color: #6b7280;
+    font-size: 1.4rem;
+  }
+}

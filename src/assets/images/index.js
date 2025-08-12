@@ -42,6 +42,12 @@ import orangeBanner from './banners/orange-banner.png';
 import popcornBanner from './banners/popcorn-banner.png';
 import chocolateBanner from './banners/chocolate-banner.png';
 
+// Blogs
+import aiCostSaving from './blogs/ai-cost-saving.png';
+import deliveryEvolution from './blogs/delivery-evolution.png';
+import retailInstability from './blogs/retail-instability.png';
+import restaurantStyleRetail from './blogs/restaurant-style-retail.png';
+
 // Logic chọn ảnh rating dựa trên giá trị rating
 export const getRatingImage = (rating) => {
   const ratingMap = {
@@ -106,6 +112,14 @@ const images = {
     orangeBanner,
     popcornBanner,
     chocolateBanner,
+  },
+
+  // Blogs
+  blogs: {
+    aiCostSaving,
+    deliveryEvolution,
+    retailInstability,
+    restaurantStyleRetail,
   },
 
   // Products

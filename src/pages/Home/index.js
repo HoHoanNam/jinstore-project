@@ -3,10 +3,11 @@ import styles from './Home.module.scss';
 import HeroSection from '~/components/HeroSection';
 import CategoryList from '~/components/CategoryList';
 
-import { products } from '~/data';
-import Card from '~/components/Card';
 import images from '~/assets/images';
+import Blog from '~/components/Blog';
+import Card from '~/components/Card';
 import Banner from '~/components/Banner';
+import { products, blogs } from '~/data';
 
 const cx = classNames.bind(styles);
 const { banners } = images;
@@ -66,6 +67,26 @@ function Home() {
               {newArrivalList.map((item, index) => (
                 <div key={index} className='col-lg-2'>
                   <Card product={item} />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Blogs */}
+          <div className={cx('blogs')} style={{ marginTop: 40 }}>
+            {/* Blog title */}
+            <h3 className={cx('title')}>
+              Our News
+              <span className={cx('sub-title')}>
+                Some of the new posts this week
+              </span>
+            </h3>
+
+            {/* Blog list */}
+            <div className='row'>
+              {blogs.map((blog, index) => (
+                <div key={index} className='col-lg-3'>
+                  <Blog data={blog} />
                 </div>
               ))}
             </div>

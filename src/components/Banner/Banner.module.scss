@@ -7,7 +7,8 @@
 
   padding: 20px 40px;
   border-radius: 6px;
-  border: 1.5px solid hsl(220, 13%, 86%);
+  background-color: #fafafa;
+  border: 1.5px solid #d7dae0;
 
   .label-banner {
     font-weight: 600;
@@ -42,11 +43,12 @@
     padding: 6px 24px;
     font-weight: bold;
     border-radius: 99px;
-    border: 1.5px solid #e5e7eb;
-    background-color: var(--white);
+    background-color: #f4f2f0;
+    border: 1.5px solid #d7d9e0;
 
     &:hover {
       transform: scale(1.1);
+      filter: brightness(88%);
     }
   }
 }

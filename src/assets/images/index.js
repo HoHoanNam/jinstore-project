@@ -35,6 +35,13 @@ import supremePizza from './products/supreme-pizza.png';
 import pepperoniPizza from './products/pepperoni-pizza.png';
 import slicedStrawberries from './products/sliced-strawberries.png';
 
+// Banners
+import lemonBanner from './banners/lemon-banner.png';
+import fruitBanner from './banners/fruit-banner.png';
+import orangeBanner from './banners/orange-banner.png';
+import popcornBanner from './banners/popcorn-banner.png';
+import chocolateBanner from './banners/chocolate-banner.png';
+
 // Logic chọn ảnh rating dựa trên giá trị rating
 export const getRatingImage = (rating) => {
   const ratingMap = {
@@ -90,6 +97,15 @@ const images = {
     rating4dot0,
     rating4dot5,
     rating5dot0,
+  },
+
+  // Banners
+  banners: {
+    lemonBanner,
+    fruitBanner,
+    orangeBanner,
+    popcornBanner,
+    chocolateBanner,
   },
 
   // Products

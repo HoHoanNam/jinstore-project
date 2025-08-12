@@ -185,8 +185,8 @@ function MiddleSection() {
 
                 {/* Social list */}
                 <ul className={cx('social-list')}>
-                  {socials.map((social) => (
-                    <li className={cx('social-item')}>
+                  {socials.map((social, index) => (
+                    <li key={index} className={cx('social-item')}>
                       <Button
                         href='#'
                         className={cx('social-btn')}

@@ -20,6 +20,40 @@ import skrill from './payment/skrill.png';
 import klarna from './payment/klarna.png';
 import mastercard from './payment/mastercard.png';
 
+// Rating
+import rating3dot0 from './rating/rating-3dot0.png';
+import rating3dot5 from './rating/rating-3dot5.png';
+import rating4dot0 from './rating/rating-4dot0.png';
+import rating4dot5 from './rating/rating-4dot5.png';
+import rating5dot0 from './rating/rating-5dot0.png';
+
+// Products ---> New arrivals
+import hamSwiss from './products/ham-swiss.png';
+import cheesePizza from './products/cheese-pizza.png';
+import orangeJuice from './products/orange-juice.png';
+import supremePizza from './products/supreme-pizza.png';
+import pepperoniPizza from './products/pepperoni-pizza.png';
+import slicedStrawberries from './products/sliced-strawberries.png';
+
+// Logic chọn ảnh rating dựa trên giá trị rating
+export const getRatingImage = (rating) => {
+  const ratingMap = {
+    3.0: images.rating.rating3dot0,
+    3.5: images.rating.rating3dot5,
+    4.0: images.rating.rating4dot0,
+    4.5: images.rating.rating4dot5,
+    5.0: images.rating.rating5dot0,
+  };
+
+  /* 
+    Làm tròn rating về số thập phân gần nhất 
+    (làm tròn về 0.0 hoặc 0.5) để khớp với key trong ratingMap 
+  */
+  const roundedRating = Math.round(rating * 2) / 2;
+
+  return ratingMap[roundedRating] || images.rating.rating3dot0;
+};
+
 const images = {
   // General
   general: {
@@ -47,6 +81,28 @@ const images = {
     skrill,
     klarna,
     mastercard,
+  },
+
+  // Rating
+  rating: {
+    rating3dot0,
+    rating3dot5,
+    rating4dot0,
+    rating4dot5,
+    rating5dot0,
+  },
+
+  // Products
+  products: {
+    // New arrivals
+    newArrivals: {
+      hamSwiss,
+      cheesePizza,
+      orangeJuice,
+      supremePizza,
+      pepperoniPizza,
+      slicedStrawberries,
+    },
   },
 };
 

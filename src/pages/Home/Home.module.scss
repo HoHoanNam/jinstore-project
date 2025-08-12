@@ -1,0 +1,19 @@
+.inner {
+  padding: 50px 0;
+  min-height: 1000px;
+  background: linear-gradient(to bottom, #ecebee 0%, #ffffff00 100%);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #030712;
+  margin-bottom: 20px;
+
+  .sub-title {
+    color: #9ca3af;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-left: 10px;
+  }
+}

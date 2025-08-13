@@ -35,6 +35,14 @@ import supremePizza from './products/supreme-pizza.png';
 import pepperoniPizza from './products/pepperoni-pizza.png';
 import slicedStrawberries from './products/sliced-strawberries.png';
 
+// Products ---> Remaining
+import rootBeer from './products/root-beer.png';
+import angelSoft from './products/angel-soft.png';
+import appleJuice from './products/apple-juice.png';
+import tboneSteak from './products/t-bone-steak.png';
+import cantaloupeMelon from './products/cantaloupe-melon.png';
+import vitaminwaterSqueezed from './products/vitaminwater-squeezed.png';
+
 // Banners
 import lemonBanner from './banners/lemon-banner.png';
 import fruitBanner from './banners/fruit-banner.png';
@@ -132,6 +140,16 @@ const images = {
       supremePizza,
       pepperoniPizza,
       slicedStrawberries,
+    },
+
+    // Remaining
+    remaining: {
+      rootBeer,
+      angelSoft,
+      appleJuice,
+      tboneSteak,
+      cantaloupeMelon,
+      vitaminwaterSqueezed,
     },
   },
 };

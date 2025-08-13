@@ -11,7 +11,7 @@ import { products, blogs } from '~/data';
 
 const cx = classNames.bind(styles);
 const { banners } = images;
-const { newArrivalList } = products;
+const { newArrivalList, remainingList } = products;
 
 function Home() {
   return (
@@ -30,7 +30,7 @@ function Home() {
             </span>
           </h3>
 
-          <div className='row' style={{ marginBottom: 40 }}>
+          <div className='row' style={{ marginBottom: 50 }}>
             {/* Banner 1 */}
             <div className='col-lg-6'>
               <Banner
@@ -72,8 +72,28 @@ function Home() {
             </div>
           </div>
 
+          {/* Best sellers */}
+          <div className={cx('best-sellers')} style={{ marginTop: 50 }}>
+            {/* Best sellers title */}
+            <h3 className={cx('title')}>
+              Best sellers
+              <span className={cx('sub-title')}>
+                Top-Selling Favorites, Grab Yours Now!
+              </span>
+            </h3>
+
+            {/* Best sellers list */}
+            <div className='row g-4'>
+              {remainingList.map((item, index) => (
+                <div key={index} className='col-lg-4'>
+                  <Card orientation='horizontal' product={item} />
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Blogs */}
-          <div className={cx('blogs')} style={{ marginTop: 40 }}>
+          <div className={cx('blogs')} style={{ marginTop: 50 }}>
             {/* Blog title */}
             <h3 className={cx('title')}>
               Our News

@@ -20,22 +20,34 @@
 .img-section {
   width: 180px;
   height: 180px;
+  flex-shrink: 0; /* Ngăn không cho img-section bị co lại */
 
   // Product image
   .product-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
 // Product details
+.product-details {
+  flex: 1;
+  overflow: hidden;
+}
+
 // Labels
 .organic-btn,
-.cold-sale-btn {
+.cold-sale-btn,
+.sweet-treats-btn,
+.fresh-protein-btn,
+.clean-essentials-btn {
   font-size: 1.4rem;
   font-weight: bold;
   border-radius: 99px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .organic-btn {
@@ -46,6 +58,21 @@
 .cold-sale-btn {
   color: #0891b2;
   background: linear-gradient(to right, #a5efff 0%, #e7f8fd 50%);
+}
+
+.clean-essentials-btn {
+  color: #2a7a7a;
+  background: linear-gradient(to right, #b2f0f0 0%, #f5fafa 50%);
+}
+
+.sweet-treats-btn {
+  color: #a01441;
+  background: linear-gradient(to right, #ffb7c5 0%, #fff5f7 50%);
+}
+
+.fresh-protein-btn {
+  color: #a6441c;
+  background: linear-gradient(to right, #ffd8b1 0%, #fff5e6 50%);
 }
 
 // Product name
@@ -192,5 +219,22 @@
     border-top: 4px solid currentColor;
     border-right: 4px solid transparent;
     filter: brightness(60%);
+  }
+}
+
+// Horizontal
+.card.horizontal {
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .img-section {
+    width: 160px;
+    height: 160px;
+  }
+
+  .price-section {
+    margin-bottom: 10px;
   }
 }

@@ -70,11 +70,23 @@ function Card({ orientation = 'vertical', product }) {
 
       {/* Product details */}
       <div className={cx('product-details')}>
+        {/* Label */}
         {product.isOrganic && (
-          <Button className={cx('organic-btn')}>ORGANIC</Button>
+          <Button className={cx('organic-btn')}>Organic</Button>
         )}
         {product.isColdSale && (
-          <Button className={cx('cold-sale-btn')}>COLD SALE</Button>
+          <Button className={cx('cold-sale-btn')}>Cold Sale</Button>
+        )}
+        {product.isCleanEssentials && (
+          <Button className={cx('clean-essentials-btn')}>
+            Clean Essentials
+          </Button>
+        )}
+        {product.isSweetTreats && (
+          <Button className={cx('sweet-treats-btn')}>Sweet Treats</Button>
+        )}
+        {product.isFreshProtein && (
+          <Button className={cx('fresh-protein-btn')}>Fresh Protein</Button>
         )}
 
         {/* Name */}
